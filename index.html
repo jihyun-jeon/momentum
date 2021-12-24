@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--1. clock-->
+    <h2 id="clock">00:00:00</h2>
+    <!--2. login form-->
+    <form id="login-form" class="hidden">
+      <!--input태그는 form태그 안에 있어야 양식 submit이 가능함-->
+      <input
+        type="text"
+        required
+        maxlength="7"
+        placeholder="what's your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+    <!--3. todolist-->
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+      <!--required : 양식이 전송되기 위해서 반드시 입력하거나 확인이 필요한 값-->
+    </form>
+    <ul id="todo-list"></ul>
+    <!--4. quote-->
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script type="module" src="src/greeting.js"></script>
+    <script type="module" src="src/clock.js"></script>
+    <script type="module" src="src/qoutes.js"></script>
+    <script type="module" src="src/"></script>
+    <script type="module" src="src/background.js"></script>
+    <script type="module" src="src/todolist.js"></script>
+    <script type="module" src="src/location.js"></script>
+  </body>
+</html>

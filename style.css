@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+}
+
+#greeting {
+  color: rgb(17, 128, 226);
+}
+
+.img {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
